@@ -1,0 +1,184 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    list-style: none;
+    margin: 5rem;
+    color: var(--Very-Dark-Blue);
+} 
+
+.card__container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--Very-Light-Gray);
+    width: 37.5rem;
+    height: 136rem;
+    padding: 8.5rem 3.2rem 7.8rem ;
+
+}
+
+.card__container h1 {
+    font-size: 2.4rem;
+    font-weight: 275;
+
+}
+
+.card__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin-top: 1rem;
+}
+
+.card__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 7.6rem;
+    opacity: 50%;
+}
+
+.list__container {
+    gap: 2.5rem;
+    display: grid;
+}
+
+.list__item {
+    background-color: white;
+    height: 22.2rem;
+    border-radius: .5rem;
+    padding: 2.8rem;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+
+
+}
+
+.icon {
+    width: 5.7rem;
+    height: 5.7rem;
+    margin-top: 3.3rem;
+    float: right;
+  
+   
+
+}
+
+.list__title {
+    font-size: 2rem ;
+    font-weight: 600;
+    text-align: left;
+
+}
+
+.list__text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+    text-align: left;
+    margin-top: .5rem;
+    opacity: 50%;
+}
+
+ #supervisor {
+    border-top: .5rem solid var(--Cyan);
+} 
+
+#team_builder {
+    border-top: .5rem solid var(--Red);
+}
+
+#karma {
+    border-top: .5rem solid var(--Orange);
+}
+
+#calculator {
+    border-top: .5rem solid var(--Blue);
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        background-color: var(--Very-Light-Gray);
+    }
+
+    .list__container {
+        gap: 0;
+        grid-column-gap: 3rem ;
+        grid-template-columns: 35rem 35rem 35rem;
+        grid-template-rows: 12.5rem 12.5rem 12.5rem 12.5rem 12.5rem;
+        grid-row-gap: 1.5rem ;
+    }
+
+    #supervisor {
+        grid-row: 2 /4 ;
+    
+    }
+
+    #team_builder {
+        grid-column: 2;
+    }
+    
+    #karma {
+        grid-column: 2;
+        grid-row: 3 /5;
+    }
+
+    #calculator {
+        grid-row: 2 /4;
+            
+        
+    }
+
+    .list__item {
+        height:25rem; 
+        width: 35rem   ;
+    }
+
+    .card__text {
+        width: 50rem;
+    }
+
+    .card__container h1, .card__title {
+        font-size: 3.6rem;
+        width: 44.5rem;
+    }
+
+    .icon {
+        width: 6.4rem;
+        height: 6.4rem;
+
+    }
+
+    .list__title {
+        font-size: 2rem;
+    }
+}  
